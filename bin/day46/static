@@ -1,0 +1,28 @@
+    
+static variable|field  | class variable 
+  It has single copy among all instances 
+  every objects created out of the class 
+  will have 1 single value to share
+  
+Where can we access it in same class : 
+  
+  -- constructor 
+  -- static methods 
+  -- instance method 
+  
+  Bottom line is -->> everywhere in same class 
+  
+  Where and how we access it outside class;
+  static way--> classname.staticFieldName
+  as long as it is visible
+  
+  What kind of access modifier can be used
+  
+  
+  
+   1) Instance methods can access instance variables-methods directly
+		 			 2) Instance methods can also access class variables-methods directly
+		 			 3) Class methods cannot access instance variables-methods directly
+		 			 4) Class methods can access class variables-methods directly 
+	
+  

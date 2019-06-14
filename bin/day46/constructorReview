@@ -1,0 +1,66 @@
+Static keyword and initializer block
+initializer block is mostly need for OCA exam)
+Review===>
+===^_^===>>> Constructor is a 
+--->>> a block of code that runs when object is made
+--->>> it has same nams as class name
+--->>> it has no return type
+--->>> public Person(){}
+--->>> public Person(String name){}
+ 
+===^_^===>>> Default behavior of compiler;
+--->>> if we don't have any contructor;
+---->>> compiler will provide one
+---->>> it is no-arg constructor with empty body
+---->>> it is a default constructor
+--->>> if we have any contructor;
+---->>> compiler will not provide the default constructor
+===^_^===>>> What is constructor mostly used for?
+---> creating object with initial state
+---> initialize all field value along with the creation
+===^_^===>>> Some keywords; ---> to create an object
+---> instantiating a class
+---> create instance of a class
+===^_^===>>> Constructor chaining
+---> Where can we call a constructor?
+it can only be called in another constructor of a same class
+using this(args...)
+---> Calling one constructor in another constructor
+---> Rules in chaining
+1- this(args...) has the be the first stamement in constructo body
+2- can be called only once in one constructor
+3- recursive call should be avoided or it will not compile
+* you call me, I call you ==> recurse
+* public Student(){
+*this("spartan") bad call!!!
+* sysout 
+}
+* public Student (String name){}
+===^_^===>>> Purpose of using constructor chaining
+---> Dry principle -- do not repeat yourself
+---> code reusability and maintainability
+WARM UP TASK 1 : 
+
+	Create a class called SlackUser
+		private fields  name , email , groupNum
+		
+		provide getters and setters for above fileds 
+		
+		create 3 args constructor to set all the field value
+
+		create no arg constructor to set default value 
+			by calling 3 args constructor 
+			you may set default value to your own info 
+
+		create toString method accept no arg 
+			return info about the slack user object 
+
+		create a method called sendMessage
+		accept two parameters 
+			  channel as string , content as String 
+		it just print out User <your name>
+				sent message <content> to channel <channel>
+
+
+	Create another class called SlackAction 
+		create few objects , call their methods 

@@ -1,0 +1,91 @@
+Inheritance:
+- IS-A Relationship
+-a sub class can inherit all visible fields  and methods from super class.
+-we use extends keyword to build this relationship
+visibility: 
+           public---------everywhere
+           protected------same package +subclasses outside package YOU MUST HAVE
+                          SUB CLASS OBJECT TO ACCESS THESE MEMBERS
+           default--------same package
+           private--------same class
+ 	       We dont inherit anything we dont inherit          
+           
+ **construstors are not inherited
+ it can be called in sub class by using super(args...) 
+ 
+ ???What is the first statement of any constructors if no constructor call this(arg)
+ super() is already made      
+ AAA super() a call to super classes no argument constructor
+ 
+ ** super(args ) or this(args..) can only be called once and cannot show up together
+ It has to be first statement all the time.MUST NOT SHOW UP IN STATIC METHOD 
+ 
+ Method Overriding???
+ we have option to override the super class method with new 
+ implementation to provide sub class version of the method
+  redefining a method in sub class 
+  
+ ** IT IS EXCLUSIVELY INSTANCE METHODS
+  
+  --we can just override the method to have same implementation
+  example in super class:
+                        public void doSomething(){
+                        print("do something");                    
+                        }
+                        
+         in sub class:  
+                       @Override
+                       public void doSomething(){
+                        //print("do something"); 
+                        super.doSomething();
+                        print("do something more")  ;                 
+                        }
+                        
+                        
+  THERE IS NOT OVERRIDING  CONCEPT FOR FIELDS AND STATIC METHODS
+  THEY CAN ONLY BE HIDDEN NOT OVERRIDEN
+  
+                        
+  super(). ----->is use to call to access super classes's fields and methods
+  HIding fields:// if subclasses define a field that already exist in super class
+  it hides super class version of the field  
+  
+  super. can only access directly parent members  
+  
+  Only THE NAME MATTER WHEN WE HIDE SUPER CLASS'S FIELD!
+  You can have different data type, visibility, instance/static
+  
+  GENERALLY SHOULD BE AVAOIDED SINCE IT IS CONFUSING
+  
+  
+                    
+                        
+   Hiding Methods:if sub class define a visible static method that already exist
+  in super class it hides super class version of the method                     
+                        
+                        
+   super class have static method--sub class have same exact static method
+   //METHOD HIDING
+   
+   super class have instance method--sub class have same exact instance method                    
+  //METHOD OVERRIDING                      
+                        
+   super class have static method--sub class have same exact instance method                    
+  //ERROR                     
+                                             
+    super class have instance method--sub class have same exact static method                    
+  //ERROR                       
+                        
+ FINAL KEYWORD????????????????????????????????????????????????????????????????
+                       
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        

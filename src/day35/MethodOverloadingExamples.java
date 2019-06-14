@@ -1,0 +1,84 @@
+package day35;
+
+public class MethodOverloadingExamples {
+
+	public static void main(String[] args) {
+		
+		System.out.println(addNums(5,7));
+		System.out.println(addNums(5,7,13));
+		addNums(56,89,45,89);
+		
+
+	}
+	
+    public static int addNums(int n1, int n2) {
+		int sum = n1+n2;
+        return sum;
+	} 
+	
+    public static int addNums(int n1, int n2, int n3) {
+    	int sum = n1+n2+n3;
+        return sum;
+
+	}
+	
+    public static void addNums(int n1, int n2, int n3, int n4) {
+    	int sum = n1+n2+n3+n4;
+       System.out.println(sum);
+
+	}
+
+    public static void main(String[] args) {
+      
+//      String name = "Java";
+  //    
+//      System.out.println(  name.indexOf("a") );
+//      System.out.println(  name.indexOf("a",2) );
+  //    
+//      System.out.println(  name.replace('a', 'B')    );
+//      System.out.println(  name.replace("va", "java")    );
+  //    
+  //    
+      
+      /// Create few static methods called addNums 
+      
+      //  first one take 2 numbers and add them
+      //  return the result as int 
+      
+      //  second one take 3 numbers and add them
+        //  return the result as int 
+        
+      
+      //  third one take 4 numbers and add them
+      //  does not return a value , 
+      // just print out the result 
+          
+        
+      System.out.println( addNums(5,4)  );
+      System.out.println( addNums(5,6,7) ) ;
+      addNums(5,6,7,8);
+      
+      //System.out.println( addNums(5,6,7,8) ) ;
+      
+    }
+    // not valid because of same method name and same method parameter list
+//      public static void addNums(int x,int y) {
+//        System.out.println("aaaaa");
+//      }
+    
+    // not valid because of same method name and same method parameter list
+//      public static int addNums(int a,int b) {
+//        return a+b;
+//      }
+    
+      public static int addNums(int x,int y) {
+        return x+y;
+      }
+      public static int addNums(int x,int y,int z) {
+        return x+y+z;
+      }
+      public static void addNums(int x,int y,int z,  int k) {
+        System.out.println( x+y+z+k);
+      }
+
+}

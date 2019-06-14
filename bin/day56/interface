@@ -1,0 +1,27 @@
+Primitive types---------> 8 primitives
+Reference Type class----> class, interface, enum
+
+====================INTERFACE===================
+Definition:Contract between a class and outside world
+           Provide set of abstract methods
+           A class implements an interface
+           
+=============Defining an interface==============
+
+ public interface Teachable{
+ public static final boolean STUDY_HARD = true;
+ 
+ public abstract void canLean();
+ public abstract void doHomework();
+  }
+  
+**Class implementing an interface using implements keyword
+  
+  public class Student implements Teachable{
+  
+  @Override
+  public void canLean(){}
+  
+  @Override
+  public void doHomework(){}  
+  }

@@ -1,0 +1,21 @@
+Variables
+
+===^_^===> depending on what's stored inside a container
+
+---> pure value or address of an object
+	----> primitive variable
+	----> reference variable
+
+===^_^===> depending on where the variable defined at
+
+---> inside a method
+    ----> called local variable
+    
+---> if it's on method decleration 
+	----> called method parameters
+	
+---> if it's outside any method under the class
+	----> field
+		-----> instance field/variable
+		-----> static field / variable
+===^_^===>
